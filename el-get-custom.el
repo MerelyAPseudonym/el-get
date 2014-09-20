@@ -582,7 +582,7 @@ this is the name to fetch in that system"
        (group :inline t :format "`Prepare' Function: %v"
               (const :format "" :prepare) (function :format "%v"))
        (group :inline t :format "`Post-Init' Function: %v"
-              (const :format "" :post-init) (function :format "%v"))
+              (const :format "" :post-init) (sexp :value '(ignore)))
        (group :inline t
               :format "Name of downloaded file (`http' and `ftp' only): %v"
               (const :format "" :localname) (string :format "%v"))
